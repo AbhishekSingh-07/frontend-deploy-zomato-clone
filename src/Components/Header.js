@@ -62,7 +62,7 @@ class Header extends React.Component {
         };
         axios({
             method: 'POST',
-            url: 'http://localhost:2020/usersignup',
+            url: 'https://whispering-reef-47493.herokuapp.com/usersignup',
             headers: { 'Content-Type': 'application/json' },
             data: signUpObj
         })
@@ -89,7 +89,7 @@ class Header extends React.Component {
         };
         axios({
             method: 'GET',
-            url: 'http://localhost:2020/login',
+            url: 'https://whispering-reef-47493.herokuapp.com/login',
             headers: { 'Content-Type': 'application/json' },
             data: loginObj
         })
