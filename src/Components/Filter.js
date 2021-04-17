@@ -32,7 +32,7 @@ class Filter extends React.Component {
       const {mealtype, area} = qs;
       const {page} = this.state;
       axios({
-        url: 'http://localhost:2020/locations',
+        url: 'https://whispering-reef-47493.herokuapp.com/locations',
         method: 'GET',
         headers: { 'Content-type': 'application/json' }
     })
@@ -64,7 +64,7 @@ class Filter extends React.Component {
         
         axios({
             method: 'POST',
-            url: 'http://localhost:2020/filter',
+            url: 'https://whispering-reef-47493.herokuapp.com/filter',
             headers: { 'Content-type': 'application/json' },
             data: {
                 sort: sort,
@@ -88,7 +88,7 @@ class Filter extends React.Component {
         const { mealtype, location, sort, cuisine, page } = this.state;
         axios({
             method: 'POST',
-            url: 'http://localhost:2020/filter',
+            url: 'https://whispering-reef-47493.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 sort: sort,
@@ -134,7 +134,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:2020/filter',
+            url: 'https://whispering-reef-47493.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj 
         }).then(res => {
@@ -156,7 +156,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:2020/filter',
+            url: 'https://whispering-reef-47493.herokuapp.com/r',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 sort: sort,
@@ -182,7 +182,7 @@ class Filter extends React.Component {
         const { mealtype, location, sort, cuisine, lcost, hcost } = this.state;
         axios({
             method: 'POST',
-            url: 'http://localhost:2020/filter',
+            url: 'https://whispering-reef-47493.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 sort: sort,
